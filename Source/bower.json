@@ -1,0 +1,11 @@
+{
+  "name": "DNXDemo",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "signalr": "~2.2.0",
+    "babylonjs": "~2.2.0"
+  }
+}

@@ -30,6 +30,11 @@ Source/Bifrost.QuickStart/App_Data
 TestResults/*
 NDependOut
 
+node_modules
+jspm_packages
+bower_components
+wwwroot
+
 # OS generated files #
 ######################
 .DS_Store
