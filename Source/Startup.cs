@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -50,9 +51,11 @@ namespace DNXDemo
             
             app.UseIISPlatformHandler();
 
-            app.UseStaticFiles();
 
-            app.UseFileServer();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                ServeUnknownFileTypes = true
+            });
             
             app.UseSignalR();
 
