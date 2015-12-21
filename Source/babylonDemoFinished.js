@@ -24,12 +24,7 @@
     
     var ground = BABYLON.Mesh.CreateGround("ground1", 600, 600, 2, scene);
     
-    
-    BABYLON.SceneLoader.ImportMesh("Snowman", "assets/", "Snowman.babylon", scene, function(loadedMeshes) {
-        
-    });
-    
-    
+    /*
 	var spheresByConnectionId = {};
 
 	var hubConnection = $.connection.hub;
@@ -53,7 +48,7 @@
 	
 	hubConnection.start().then(function() {
 		console.log("Started");
-	});
+	});*/
 
 	var renderCounter = 0;
 	engine.runRenderLoop(function () {
@@ -65,7 +60,7 @@
 		var scaled = normalized.scale(5);
 		
 		sphere.position = camera.position.add(scaled);
-
+		/*
 		renderCounter++;
 		if( renderCounter == 10 ) {
 			renderCounter = 0;
@@ -80,6 +75,7 @@
 			}
 			
 		}
+        */
 	});		
 	
 	window.addEventListener("resize", function () {

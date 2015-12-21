@@ -10,6 +10,8 @@ export class Index
 		
 		this.horses = 43;
 		this.something = 44;
+        
+        this.awesome = 42;
 		
 		setInterval(() => {
 			self.stuff(self.stuff()+6);
